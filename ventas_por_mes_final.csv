@@ -1,0 +1,31 @@
+mes,producto,region,total_ventas,total_unidades,ingreso_total
+1,Monitor,Metropolitana,1,1,1442677
+1,Tablet,Antofagasta,1,3,3510684
+3,Laptop,Biobio,1,2,1010504
+3,Smartphone,Valparaiso,1,2,990124
+3,Tablet,Los Lagos,1,1,964973
+3,Tablet,Metropolitana,1,1,111093
+4,Monitor,Biobio,1,2,471574
+4,Monitor,Metropolitana,1,4,1650568
+4,Tablet,Biobio,1,2,2937432
+6,Mouse,Los Lagos,1,2,1564600
+6,Mouse,Metropolitana,1,1,314403
+6,Teclado,Biobio,1,1,530860
+7,Tablet,Los Lagos,1,1,869489
+7,Teclado,Valparaiso,1,3,2711286
+7,Mouse,Antofagasta,1,1,340300
+7,Laptop,Los Lagos,1,4,1294928
+8,Laptop,Antofagasta,1,3,3858045
+9,Laptop,Antofagasta,1,1,918466
+9,Laptop,Los Lagos,1,3,3132843
+9,Monitor,Antofagasta,1,4,2621912
+9,Monitor,Metropolitana,1,3,345576
+9,Tablet,Biobio,1,3,2431803
+9,Teclado,Valparaiso,1,1,774849
+10,Mouse,Biobio,1,3,3687051
+11,Laptop,Biobio,1,4,3545780
+11,Smartphone,Metropolitana,1,4,2463556
+11,Tablet,Metropolitana,1,2,1804792
+12,Smartphone,Metropolitana,1,2,1516980
+12,Monitor,Biobio,1,1,585847
+12,Smartphone,Biobio,1,3,4318326

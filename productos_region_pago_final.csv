@@ -1,0 +1,26 @@
+producto,region,metodo_pago,frecuencia_ventas,precio_promedio,unidades_vendidas,ingreso_total
+Laptop,Biobio,PayPal,2,695848.5,6,4556284
+Laptop,Los Lagos,Tarjeta Credito,2,684006.5,7,4427771
+Smartphone,Biobio,Tarjeta Credito,1,1439442.0,3,4318326
+Laptop,Antofagasta,PayPal,1,1286015.0,3,3858045
+Mouse,Biobio,Transferencia,1,1229017.0,3,3687051
+Tablet,Antofagasta,Tarjeta Credito,1,1170228.0,3,3510684
+Teclado,Valparaiso,Tarjeta Credito,2,839305.5,4,3486135
+Monitor,Metropolitana,Tarjeta Credito,2,927659.5,5,3093245
+Tablet,Biobio,Transferencia,1,1468716.0,2,2937432
+Monitor,Antofagasta,Contra Entrega,1,655478.0,4,2621912
+Smartphone,Metropolitana,Transferencia,1,615889.0,4,2463556
+Tablet,Biobio,Contra Entrega,1,810601.0,3,2431803
+Tablet,Metropolitana,Transferencia,2,506744.5,3,1915885
+Mouse,Los Lagos,Tarjeta Credito,1,782300.0,2,1564600
+Smartphone,Metropolitana,PayPal,1,758490.0,2,1516980
+Smartphone,Valparaiso,PayPal,1,495062.0,2,990124
+Tablet,Los Lagos,Contra Entrega,1,964973.0,1,964973
+Laptop,Antofagasta,Tarjeta Credito,1,918466.0,1,918466
+Tablet,Los Lagos,Transferencia,1,869489.0,1,869489
+Monitor,Biobio,Contra Entrega,1,585847.0,1,585847
+Teclado,Biobio,Contra Entrega,1,530860.0,1,530860
+Monitor,Biobio,Tarjeta Credito,1,235787.0,2,471574
+Monitor,Metropolitana,PayPal,1,115192.0,3,345576
+Mouse,Antofagasta,PayPal,1,340300.0,1,340300
+Mouse,Metropolitana,Tarjeta Credito,1,314403.0,1,314403

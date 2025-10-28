@@ -1,0 +1,31 @@
+id_producto;nombre_producto;categoria;stock_actual;bodega;rotacion_mensual;estado
+1;Laptop;Perifericos;263;Antofagasta;74;Disponible
+2;Tablet;Computadores;332;Valparaiso;35;Bajo Stock
+3;Smartphone;Moviles;13;Santiago;76;Bajo Stock
+4;Smartphone;Computadores;333;Valparaiso;38;Disponible
+5;Smartphone;Perifericos;423;Valparaiso;16;Disponible
+6;Mouse;Computadores;441;Santiago;93;Sin Stock
+7;Teclado;Perifericos;235;Concepcion;46;Disponible
+8;Smartphone;Moviles;195;Santiago;39;Disponible
+9;Mouse;Moviles;39;Concepcion;74;Disponible
+10;Teclado;Computadores;47;Santiago;52;Sin Stock
+11;Teclado;Computadores;464;Santiago;7;Bajo Stock
+12;Mouse;Computadores;457;Santiago;32;Disponible
+13;Mouse;Moviles;421;Santiago;53;Sin Stock
+14;Laptop;Computadores;458;Antofagasta;45;Sin Stock
+15;Tablet;Perifericos;301;Santiago;99;Sin Stock
+16;Monitor;Moviles;456;Valparaiso;64;Sin Stock
+17;Teclado;Perifericos;158;Valparaiso;28;Bajo Stock
+18;Laptop;Perifericos;413;Santiago;8;Bajo Stock
+19;Monitor;Perifericos;66;Santiago;22;Sin Stock
+20;Teclado;Moviles;3;Concepcion;41;Bajo Stock
+21;Smartphone;Moviles;22;Valparaiso;22;Bajo Stock
+22;Laptop;Computadores;225;Santiago;77;Sin Stock
+23;Mouse;Perifericos;491;Antofagasta;61;Sin Stock
+24;Monitor;Computadores;88;Santiago;69;Sin Stock
+25;Teclado;Computadores;284;Concepcion;94;Disponible
+26;Teclado;Perifericos;318;Santiago;94;Disponible
+27;Smartphone;Computadores;36;Concepcion;75;Sin Stock
+28;Mouse;Computadores;230;Antofagasta;58;Disponible
+29;Teclado;Moviles;446;Concepcion;79;Bajo Stock
+30;Mouse;Computadores;353;Concepcion;70;Disponible

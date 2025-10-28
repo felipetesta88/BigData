@@ -1,0 +1,31 @@
+id_cliente;nombre;email;telefono;region;segmento;total_compras
+1;Cliente_1;cliente1@storechile.cl;+56 9 16477099;Los Lagos;Ocasional;5
+2;Cliente_2;cliente2@storechile.cl;+56 9 94480436;Metropolitana;Ocasional;14
+3;Cliente_3;cliente3@storechile.cl;+56 9 49734476;Antofagasta;Ocasional;20
+4;Cliente_4;cliente4@storechile.cl;+56 9 94003564;Valparaiso;Premium;48
+5;Cliente_5;cliente5@storechile.cl;+56 9 82994293;Metropolitana;Ocasional;1
+6;Cliente_6;cliente6@storechile.cl;+56 9 87384712;Antofagasta;Premium;24
+7;Cliente_7;cliente7@storechile.cl;+56 9 68483826;Metropolitana;Ocasional;37
+8;Cliente_8;cliente8@storechile.cl;+56 9 69648209;Valparaiso;Ocasional;45
+9;Cliente_9;cliente9@storechile.cl;+56 9 20788629;Biobio;Frecuente;43
+10;Cliente_10;cliente10@storechile.cl;+56 9 15201672;Metropolitana;Frecuente;36
+11;Cliente_11;cliente11@storechile.cl;+56 9 88449013;Biobio;Ocasional;38
+12;Cliente_12;cliente12@storechile.cl;+56 9 27912100;Los Lagos;Premium;22
+13;Cliente_13;cliente13@storechile.cl;+56 9 66110234;Biobio;Ocasional;33
+14;Cliente_14;cliente14@storechile.cl;+56 9 68754449;Valparaiso;Frecuente;4
+15;Cliente_15;cliente15@storechile.cl;+56 9 16783345;Los Lagos;Premium;17
+16;Cliente_16;cliente16@storechile.cl;+56 9 83938648;Biobio;Premium;37
+17;Cliente_17;cliente17@storechile.cl;+56 9 89579961;Biobio;Premium;21
+18;Cliente_18;cliente18@storechile.cl;+56 9 27553335;Valparaiso;Premium;30
+19;Cliente_19;cliente19@storechile.cl;+56 9 43192944;Antofagasta;Premium;21
+20;Cliente_20;cliente20@storechile.cl;+56 9 72681060;Metropolitana;Frecuente;40
+21;Cliente_21;cliente21@storechile.cl;+56 9 91113939;Metropolitana;Ocasional;14
+22;Cliente_22;cliente22@storechile.cl;+56 9 51684052;Metropolitana;Ocasional;25
+23;Cliente_23;cliente23@storechile.cl;+56 9 77795814;Biobio;Frecuente;3
+24;Cliente_24;cliente24@storechile.cl;+56 9 90415169;Antofagasta;Premium;4
+25;Cliente_25;cliente25@storechile.cl;+56 9 69306236;Metropolitana;Ocasional;24
+26;Cliente_26;cliente26@storechile.cl;+56 9 49244711;Valparaiso;Ocasional;44
+27;Cliente_27;cliente27@storechile.cl;+56 9 18283402;Antofagasta;Ocasional;27
+28;Cliente_28;cliente28@storechile.cl;+56 9 40234160;Valparaiso;Ocasional;31
+29;Cliente_29;cliente29@storechile.cl;+56 9 84602024;Metropolitana;Frecuente;21
+30;Cliente_30;cliente30@storechile.cl;+56 9 33399835;Los Lagos;Ocasional;30

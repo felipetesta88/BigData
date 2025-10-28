@@ -1,0 +1,31 @@
+id_venta;id_cliente;producto;precio;cantidad;metodo_pago;region;fecha_compra
+1;22;Smartphone;615889;4;Transferencia;Metropolitana;2024-11-13 00:41:34.105502
+2;16;Laptop;918466;1;Tarjeta Credito;Antofagasta;2025-09-09 00:41:34.105533
+3;11;Tablet;111093;1;Transferencia;Metropolitana;2025-03-01 00:41:34.105538
+4;22;Teclado;903762;3;Tarjeta Credito;Valparaiso;2025-07-02 00:41:34.105542
+5;9;Teclado;530860;1;Contra Entrega;Biobio;2025-06-12 00:41:34.105546
+6;1;Mouse;340300;1;PayPal;Antofagasta;2025-07-25 00:41:34.105551
+7;24;Monitor;1442677;1;Tarjeta Credito;Metropolitana;2025-01-27 00:41:34.105556
+8;2;Monitor;115192;3;PayPal;Metropolitana;2025-09-15 00:41:34.105561
+9;8;Monitor;412642;4;Tarjeta Credito;Metropolitana;2025-04-29 00:41:34.105571
+10;24;Laptop;1044281;3;Tarjeta Credito;Los Lagos;2025-09-22 00:41:34.105575
+11;29;Laptop;1286015;3;PayPal;Antofagasta;2025-08-20 00:41:34.105579
+12;14;Tablet;810601;3;Contra Entrega;Biobio;2025-09-22 00:41:34.105582
+13;22;Smartphone;1439442;3;Tarjeta Credito;Biobio;2024-12-25 00:41:34.105585
+14;27;Monitor;585847;1;Contra Entrega;Biobio;2024-12-15 00:41:34.105589
+15;15;Laptop;886445;4;PayPal;Biobio;2024-11-20 00:41:34.105591
+16;15;Tablet;869489;1;Transferencia;Los Lagos;2025-07-27 00:41:34.105594
+17;2;Mouse;782300;2;Tarjeta Credito;Los Lagos;2025-06-02 00:41:34.105597
+18;7;Laptop;323732;4;Tarjeta Credito;Los Lagos;2025-07-04 00:41:34.105601
+19;25;Smartphone;758490;2;PayPal;Metropolitana;2024-12-04 00:41:34.105604
+20;10;Tablet;902396;2;Transferencia;Metropolitana;2024-11-18 00:41:34.105606
+21;15;Tablet;1170228;3;Tarjeta Credito;Antofagasta;2025-01-21 00:41:34.105610
+22;20;Mouse;1229017;3;Transferencia;Biobio;2025-10-12 00:41:34.105612
+23;14;Monitor;655478;4;Contra Entrega;Antofagasta;2025-09-01 00:41:34.105615
+24;23;Smartphone;495062;2;PayPal;Valparaiso;2025-03-01 00:41:34.105619
+25;23;Tablet;964973;1;Contra Entrega;Los Lagos;2025-03-28 00:41:34.105622
+26;4;Tablet;1468716;2;Transferencia;Biobio;2025-04-19 00:41:34.105625
+27;1;Mouse;314403;1;Tarjeta Credito;Metropolitana;2025-06-28 00:41:34.105628
+28;13;Monitor;235787;2;Tarjeta Credito;Biobio;2025-04-08 00:41:34.105631
+29;18;Laptop;505252;2;PayPal;Biobio;2025-03-15 00:41:34.105634
+30;5;Teclado;774849;1;Tarjeta Credito;Valparaiso;2025-09-22 00:41:34.105637
