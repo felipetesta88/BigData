@@ -1,0 +1,81 @@
+CONSULTA 1: Evolución Temporal de Ventas
+SELECT 
+MONTH(fecha_compra) as mes,
+producto,
+region,
+COUNT() as total_ventas,
+SUM(cantidad) as total_unidades,
+SUM(precio cantidad) as ingreso_total
+FROM ventas 
+GROUP BY MONTH(fecha_compra), producto, region
+ORDER BY mes;
+
+CONSULTA 2: Análisis de Productos por Región y Método de Pago
+SELECT 
+producto,
+region,
+metodo_pago,
+COUNT() as frecuencia_ventas,
+AVG(precio) as precio_promedio,
+SUM(cantidad) as unidades_vendidas,
+SUM(precio cantidad) as ingreso_total
+FROM ventas
+GROUP BY producto, region, metodo_pago
+ORDER BY ingreso_total DESC;
+
+CONSULTA 3: Análisis de Comportamiento de Clientes
+SELECT 
+ c.id_cliente,
+c.ciudad,
+c.nombre,
+COUNT(DISTINCT v.id_venta) as total_compras,
+SUM(v.cantidad) as total_productos,
+SUM(v.precio * v.cantidad) as total_gastado,
+COUNT(DISTINCT n.id_sesion) as sesiones_navegacion,
+CASE 
+WHEN COUNT(DISTINCT v.id_venta) > 2 THEN 'CLIENTE FRECUENTE'
+WHEN COUNT(DISTINCT v.id_venta) > 0 THEN 'CLIENTE OCASIONAL'
+ELSE 'PROSPECTO'
+END as segmento_cliente
+FROM clientes c
+LEFT JOIN ventas v ON c.id_cliente = v.id_cliente
+LEFT JOIN navegacion n ON c.id_cliente = n.id_cliente
+GROUP BY c.id_cliente, c.ciudad, c.nombre
+ORDER BY total_gastado DESC;
+
+
+
+
+
+
+CONSULTA 4: Análisis de Eficiencia por Región
+SELECT 
+region,
+COUNT(DISTINCT id_venta) as total_ventas,
+COUNT(DISTINCT id_cliente) as clientes_unicos,
+SUM(cantidad) as total_unidades,
+SUM(precio * cantidad) as ingreso_total,
+AVG(precio * cantidad) as ticket_promedio,
+COUNT(DISTINCT producto) as variedad_productos,
+COUNT(DISTINCT metodo_pago) as metodos_pago_utilizados
+FROM ventas
+GROUP BY region
+ORDER BY ingreso_total DESC;
+
+CONSULTA 5: Análisis de Inventario vs Demanda Real
+SELECT 
+i.producto,
+i.ubicacion,
+i.stock_actual,
+i.stock_minimo,
+COALESCE(SUM(v.cantidad), 0) as demanda_real,
+ (i.stock_actual - COALESCE(SUM(v.cantidad), 0)) as diferencia_stock,
+CASE 
+WHEN (i.stock_actual - COALESCE(SUM(v.cantidad), 0)) <= i.stock_minimo THEN 'REORDEN URGENTE'
+WHEN (i.stock_actual - COALESCE(SUM(v.cantidad), 0)) <= (i.stock_minimo * 2) THEN 'REORDEN PRONTO'
+ELSE 'STOCK SUFICIENTE'
+END as estado_inventario
+FROM inventario i
+LEFT JOIN ventas v ON i.producto = v.producto
+GROUP BY i.producto, i.ubicacion, i.stock_actual, i.stock_minimo
+ORDER BY estado_inventario, diferencia_stock ASC;
