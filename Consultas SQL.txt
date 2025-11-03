@@ -1,0 +1,71 @@
+CONSULTA 1: Ventas totales por región y producto
+SELECT 
+region,
+producto,
+COUNT() as total_ventas,
+SUM(cantidad) as total_unidades,
+SUM(precio cantidad) as ingreso_total
+FROM ventas
+GROUP BY region, producto
+ORDER BY region, ingreso_total DESC;
+
+CONSULTA 2: Análisis de clientes por frecuencia de compra
+SELECT 
+v.id_cliente,
+c.nombre,
+c.ciudad,
+COUNT(DISTINCT v.id_venta) as total_compras,
+SUM(v.cantidad) as total_productos,
+SUM(v.precio * v.cantidad) as total_gastado
+FROM ventas v
+JOIN clientes c ON v.id_cliente = c.id_cliente
+GROUP BY v.id_cliente, c.nombre, c.ciudad
+ORDER BY total_gastado DESC
+LIMIT 10;
+
+CONSULTA 3: Análisis de inventario vs ventas
+SELECT 
+i.producto,
+i.stock_actual,
+i.stock_minimo,
+i.ubicacion,
+COALESCE(SUM(v.cantidad), 0) as total_vendido,
+CASE 
+WHEN i.stock_actual <= i.stock_minimo THEN 'REORDEN URGENTE'
+WHEN i.stock_actual <= (i.stock_minimo * 2) THEN 'REORDEN PRONTO'
+ELSE 'STOCK OK'
+END as estado_inventario
+FROM inventario i
+LEFT JOIN ventas v ON i.producto = v.producto
+GROUP BY i.producto, i.stock_actual, i.stock_minimo, i.ubicacion
+ORDER BY estado_inventario, total_vendido DESC;
+
+CONSULTA 4: Comportamiento de navegación vs conversión
+SELECT 
+n.id_cliente,
+c.nombre,
+COUNT(DISTINCT n.id_sesion) as sesiones_navegacion,
+AVG(n.tiempo_segundos) as tiempo_promedio_sesion,
+COUNT(DISTINCT v.id_venta) as total_compras,
+CASE 
+WHEN COUNT(DISTINCT v.id_venta) > 0 THEN 'CONVERSION EXITOSA'
+ELSE 'SIN COMPRA'
+END as estado_conversion
+FROM navegacion n
+JOIN clientes c ON n.id_cliente = c.id_cliente
+LEFT JOIN ventas v ON n.id_cliente = v.id_cliente
+GROUP BY n.id_cliente, c.nombre
+ORDER BY total_compras DESC, sesiones_navegacion DESC
+LIMIT 15;
+CONSULTA 5: Métodos de pago preferidos por región y producto
+SELECT 
+v.region,
+v.producto,
+v.metodo_pago,
+COUNT() as total_transacciones,
+SUM(v.cantidad) as total_unidades,
+SUM(v.precio v.cantidad) as volumen_ventas,
+ROUND((COUNT() 100.0 / SUM(COUNT(*)) OVER (PARTITION BY v.region)), 2) as porcentaje_region
+FROM ventas v
+GROUP BY v.region, v.producto, v.metodo_pago
+ORDER BY v.region, volumen_ventas DESC;
